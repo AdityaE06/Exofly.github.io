@@ -1,0 +1,383 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+
+#logo img{
+    height: 60px;
+    margin: 3px 6px;
+}
+
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('https://remoteaviation.com.au/wp-content/uploads/2017/01/Inspire1.jpeg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:#7c1111;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    margin-top: -330px;
+    font-size: 60px;
+   
+
+}
+
+
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+
+}
+#contact1{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 470px;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('https://bollyhollybaba.com/wp-content/uploads/2019/03/business-background-picture-wide-hd-cool-wallpaper-85481.jpg') no-repeat center center/cover;
+
+}
+#contact1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('https://pathfinder.global/images/contact-us-banner.jpg') no-repeat center center/cover;
+
+}
+#teamp img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#contact-box{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 34px;
+    margin-left: 70px;
+    margin-top: -400px;
+    
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    margin-top: 180px;
+
+}
+.contac{
+        background: black;
+        color: white;
+        padding: 9px 20px;
+        margin-top: 90px;
+}
+.about{
+        background: black;
+        color: white;
+        padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    align-items: center;
+   margin-block-start: -4px;
+   margin-left: -30px;
+   
+   
+    
+}
+
+
+.center{
+    text-align: center;
+}
+.pho{
+    margin-left: 550px;
+    opacity: 0.6;
+    margin-top: 20px;
+    border-style:hidden;
+    
+   display: inline-block;
+    
+    border-radius: 10px;
+   
+}
+#first::before{ 
+    content: "";
+    position: absolute;
+    background: url('https://files.123freevectors.com/wp-content/original/130949-abstract-blue-and-white-polygon-background-template-design.jpg') no-repeat center center/cover;
+    height:4200px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+.phot{
+    margin-left: 530px;
+    opacity: 1;
+    margin-top: 15px;
+    border-style:hidden;
+    height:900px;
+    width: 500px;
+   display: inline-block;
+    margin-bottom: -2000px;
+    border-radius: 10px;
+}
+.button{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: #a52a2a;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    align-items: center;
+   margin-block-start: -4px;
+   margin-left: 11px;
+margin-top: 10px;
+}
+#info{
+    display:block;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    color:#6d18c7;
+    font-style:normal;
+    font-weight:bolder;
+    
+    
+    
+}
+#info1{
+    display:block;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: -20px;
+    margin-top: 10px;
+    margin-left: 70px;
+    color:#ddf300;
+    font-style:normal;
+    font-weight:bolder;}
+#social{
+    font-size: 85px;
+    margin-left: 840px;
+    color: black;
+    margin-top: 4px;
+}
+#social2{
+    font-size: 30px;
+    margin-left: 790px;
+    color: black;
+    margin-top: 60px;
+}
+#social1{
+    font-size: 30px;
+    margin-left: -70px;
+    color: rgb(201, 197, 197);
+    text-align: 80%;
+    margin-left: 2px;
+}
+#follow{
+    font-size: 30px;
+    opacity: 0.6;
+    font-weight: lighter;
+    font-style: 'Poppins', sans-serif;
+    text-align: 80%;
+}
+#ab{
+    justify-content:center;
+}
